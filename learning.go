@@ -41,6 +41,8 @@ func main(){
 	var age int = 12
 	newName := "alberto"
 	newAge := 123
+	learning()
+	test()
 	const number = 60 * 60
 
 	var person1 person
@@ -68,10 +70,7 @@ func main(){
 	fmt.Printf("%+v\n", person2)
 	fmt.Printf("%+v\n",subject1)
 
-	hello("makan")
-
 	fmt.Println(attend || present)
-	fmt.Println("test lagi bang")
 	fmt.Println(name)
 	fmt.Println(age)
 	fmt.Println(newName, " is ", newAge)
