@@ -32,8 +32,13 @@ func getDetail(_ shape) {
 	fmt.Println("this is shape")
 }
 
-func learning() {
-	fmt.Println("start of the program")
+func learning_interface() {
+	// border function is imported from main
+	// because they are in the same package
+	// they don't need to be imported
+	border()
+	fmt.Println("This is interface")
+	border()
 	var r = rectangle {
 		width: 12, 
 		height: 12,

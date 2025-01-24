@@ -4,10 +4,6 @@ import (
 	"fmt"
 )
 
-func hello (s string) {
-	fmt.Println(s)
-}
-
 type person struct {
 	name string
 	age int
@@ -34,16 +30,29 @@ type subject struct {
 	// }
 }
 
+func border() {
+	fmt.Println("")
+	fmt.Println("====================================")
+	fmt.Println("")
+}
+
 func main(){
 	var name string = "johanes"
 	var attend bool = false
 	var present bool = true
 	var age int = 12
+	const number = 60 * 60
+
 	newName := "alberto"
 	newAge := 123
-	learning()
-	test()
-	const number = 60 * 60
+
+	fmt.Println(attend || present)
+	fmt.Println(name)
+	fmt.Println(age)
+	fmt.Println(newName, " is ", newAge)
+	fmt.Println(number)
+
+	learning_interface()
 
 	var person1 person
 	person1.name = "berto"
@@ -53,6 +62,7 @@ func main(){
 		name: "johanes",
 		age: 12,
 	}
+
 	var personName = person2.detail()
 	fmt.Println(personName)
 
@@ -63,16 +73,11 @@ func main(){
 			age: 12,
 		},
 	}
-
 	
 	fmt.Println(person1)
 	// with the key of the object
 	fmt.Printf("%+v\n", person2)
 	fmt.Printf("%+v\n",subject1)
 
-	fmt.Println(attend || present)
-	fmt.Println(name)
-	fmt.Println(age)
-	fmt.Println(newName, " is ", newAge)
-	fmt.Println(number)
+	array_learning()
 }
