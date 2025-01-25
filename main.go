@@ -80,4 +80,5 @@ func main(){
 	fmt.Printf("%+v\n",subject1)
 
 	array_learning()
+	learning_maps()
 }

@@ -24,4 +24,24 @@ func array_learning() {
 	var slice []int
 	slice = append(slice, 2, 3)
 	fmt.Println(slice)
+
+	var matrix = make([][]int, 0)
+	// same with the bellow
+	// var matrix [][]int
+	// matrix := [][]int{}
+	for i := 0; i < 3; i++{
+		var row []int
+		for j := 0; j < 3; j++{
+			row = append(row, j)
+		}
+		matrix = append(matrix ,row)
+	}
+
+	fmt.Println(matrix)
+
+	// too loop the slice
+	// for index, element := range slice
+	for index, row := range matrix {
+		fmt.Println(index, row)
+	}
 }
