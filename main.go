@@ -81,4 +81,5 @@ func main(){
 
 	array_learning()
 	learning_maps()
+	advancedFunction()
 }
